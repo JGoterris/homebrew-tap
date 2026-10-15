@@ -5,21 +5,21 @@
 class Orbit < Formula
   desc "Terminal UI to launch, control and monitor local services"
   homepage "https://github.com/JGoterris/orbit"
-  version "1.0.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JGoterris/orbit/releases/download/v1.0.0/orbit_1.0.0_darwin_amd64.tar.gz"
-      sha256 "03a0d5da5dbad3ce148171a29cf09f58cbc9733ff8409e33aaf0131272114e0d"
+      url "https://github.com/JGoterris/orbit/releases/download/v1.1.1/orbit_1.1.1_darwin_amd64.tar.gz"
+      sha256 "a69d14f3d86ca8742e43b76e066a491b3b63953ff4e5c3bca62fbaffbe609027"
 
       define_method(:install) do
         bin.install "orbit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JGoterris/orbit/releases/download/v1.0.0/orbit_1.0.0_darwin_arm64.tar.gz"
-      sha256 "0640b5aca7f268b665f1e3a519566489e733f81a6d524fdcee04d9df31c3a4d5"
+      url "https://github.com/JGoterris/orbit/releases/download/v1.1.1/orbit_1.1.1_darwin_arm64.tar.gz"
+      sha256 "5b254f79ff7122613df24d59789cd94830912ba86a7a732c56590c44837bd944"
 
       define_method(:install) do
         bin.install "orbit"
@@ -29,15 +29,15 @@ class Orbit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JGoterris/orbit/releases/download/v1.0.0/orbit_1.0.0_linux_amd64.tar.gz"
-      sha256 "9de20b3ea4f9f6436111ad48e740f55b327e80f89406866dd9abed941d6df742"
+      url "https://github.com/JGoterris/orbit/releases/download/v1.1.1/orbit_1.1.1_linux_amd64.tar.gz"
+      sha256 "ac1a6e652db32b1c9e43e15d2dff26a9764be49137554b9f1147b5a6dda820c5"
       define_method(:install) do
         bin.install "orbit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JGoterris/orbit/releases/download/v1.0.0/orbit_1.0.0_linux_arm64.tar.gz"
-      sha256 "10efff50a83da7787481996f077ba8c1ea972860e4ff35bff696be829ed2bae8"
+      url "https://github.com/JGoterris/orbit/releases/download/v1.1.1/orbit_1.1.1_linux_arm64.tar.gz"
+      sha256 "64148a67ca738aa76089572dfa3cdcb36a56207b218e6445e85990f714688922"
       define_method(:install) do
         bin.install "orbit"
       end
